@@ -37,7 +37,7 @@
     border:solid red;
 }
 
-.convert {
+.my-button {
     background-color: cyan;
     color: black;
     border-radius: 6px;
@@ -47,8 +47,26 @@
 
 }
 
-.convert:active {
+.my-button:active {
     background-color: darkcyan;
     color:beige;
     transform:translateY(4px);
+}
+
+.my-button:disabled {
+    background-color: red;
+}
+
+.result-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+
+
+.result-field{
+    outline: none;
+    border-radius: 8px;
+    border:solid black;
+    padding: 10px 10px ;
 }
