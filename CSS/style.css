@@ -1,29 +1,32 @@
-#navigation-bar {
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    height: 150vh;
+    background: linear-gradient(#08555b,bisque );
+    color: bisque;
+  }
+  
+  
+  .converter-container {
+    background-color: #08555b;
+    padding: 80px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; 
+
 }
 
-#logo {
-    height: min-content;
-    margin-top: 0;
-}
-
-#navigation {
-    display: flex;
-}
-
-#navigation>a {
-    text-decoration: none;
-    padding: 8px;
-}
-
-#navigation:hover {
-    color:red
-}
-
-.input-section {
+.converter-container{
     display: flex;
     flex-direction: column;
+}
+.input-section {
+    display: flex;
+    flex-direction: row;
 }
 
 .input-field {
@@ -31,23 +34,50 @@
     border-radius: 8px;
     border:solid black;
     padding: 10px 10px ;
+    margin-left: 13px;
 }
+
+.input-field::placeholder {
+    color: bisque;
+}
+
 
 .input-field:focus {
-    border:solid red;
+    border:solid bisque;
 }
 
-.my-button {
-    background-color: cyan;
+select {
+    margin-left: 5px;
+    width: 118px ;
+    background-color:#08555b;
+    color: bisque;
+}
+
+button {
+    background-color:#08555b;
     color: black;
     border-radius: 6px;
     border:solid black;
     padding: 5px 5px;
-    margin-top: 5px;
-
+    width: 100px;
+    
+  
 }
 
-.my-button:active {
+.button-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 0%;
+}
+
+button{
+    margin-right: 40px;
+    background-color:#08555b;
+    color: bisque;
+}
+button:active {
     background-color: darkcyan;
     color:beige;
     transform:translateY(4px);
@@ -59,14 +89,47 @@
 
 .result-section {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin-top: 5px;
 }
 
 
-.result-field{
+input{
     outline: none;
     border-radius: 8px;
     border:solid black;
     padding: 10px 10px ;
+    margin-left: 5px;
+    background-color:#08555b;
+    color: bisque;
+    
+}
+
+.result-field[disabled]::placeholder {
+    /* Mengatur warna placeholder */
+    color: bisque; /* Atur warna placeholder yang diinginkan */
+}
+
+.result-field:disabled {
+    color: bisque;
+}
+
+
+
+label {
+    margin-right: 10px;
+}
+
+.steps-field {
+    width :345px;
+    height: 150px;
+    margin-right: 35px;
+}
+
+.steps-field::placeholder {
+    position: absolute;
+    top: 3px; 
+    left: 3px;
+    color: bisque;
+
 }

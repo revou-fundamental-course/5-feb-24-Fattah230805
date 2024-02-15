@@ -7,23 +7,38 @@
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
-    <header id="navigation-bar">
-        <h3 id="logo">Put Logo</h3>
-        <nav id="navigation">
-            <a href="">Liat Hasil</a>
-            <a href="">Liat Langkah</a>
-        </nav>
-    </header>
-    <div class="input-section">
-        <label for="input-field">Celcius ( °C )</label>
-        <input type="text" class="input-field">
+    <div class="converter-container">
+        <h1 id="logo">Converter Temperature</h1>
+        <div class="input-section">
+            <label for="input-field">Input :</label>
+            <input type="text" class="input-field" placeholder="Enter temperature">
+            <select id="input-select">
+              <option value="celsius">Celsius</option>
+              <option value="fahrenheit">Fahrenheit</option>
+            </select>
+        </div>
+        
+        <div class="result-section">
+            <label for="result-field">Result :</label>
+            <input type="text" class="result-field" placeholder="Result" disabled>
+            <select id="result-select">
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+              </select>
+        </div>
+        <div class="button-container">
+            <button class="convert-button">convert</button>
+            <button class="reset-button">reset</button>
+            <button class="reverse-button">reverse</button>
+        </div>
+        
+        <div class="steps-section">
+            <h3>Cara kalkulasi :</h3>
+            <input type="text" class="steps-field" placeholder="Steps:" placeholder="-" disabled>
+        </div>
     </div>
-    <button class="my-button">convert</button>
-    <div class="result-section">
-        <input type="text" class="result-field">
-    </div>
+   
     
-    <h2 id="result"></h2>
 </body>
 <script src="./js/script.js"></script>
 </html>
